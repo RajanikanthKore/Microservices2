@@ -9,5 +9,5 @@ import com.htc.doctorservice.entity.Doctor;
 
 @Repository
 public interface IDoctor extends JpaRepository<Doctor,Long>{
-	
+public Doctor findByAppointmentId(Long appointmentId);
 }
