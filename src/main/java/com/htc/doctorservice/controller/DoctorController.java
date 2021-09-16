@@ -19,7 +19,7 @@ public class DoctorController {
 	
 	private IDoctor repo;
  
-@GetMapping("/doctors/{doctorId}")
+@GetMapping("from/doctors/{doctorId}")
 Doctor getDoctor(@PathVariable Long doctorId)
 {
 	Doctor doc=null;
@@ -28,7 +28,7 @@ Doctor getDoctor(@PathVariable Long doctorId)
 	
 }
 
-@GetMapping("/doctors/{appointmentId}")
+@GetMapping("to/doctors/{appointmentId}")
 Doctor getDoctorByAppoinmentId(@PathVariable Long appointmentId)
 {
 	Doctor doc=null;
